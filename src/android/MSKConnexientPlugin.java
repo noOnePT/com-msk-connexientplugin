@@ -94,6 +94,7 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                     String msg = "SDK initialization failed with error code: " + code;
                     Log.e(TAG, msg);
                     PluginResult result = new PluginResult(PluginResult.Status.ERROR, msg);
+                    result.setKeepCallback(true);
                     callbackContext.sendPluginResult(result);
                 }
                 @Override
@@ -101,6 +102,7 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                     String msg = "Exception while initializing SDK: " + throwable.getMessage();
                     Log.e(TAG, msg);
                     PluginResult result = new PluginResult(PluginResult.Status.ERROR, msg);
+                    result.setKeepCallback(true);
                     callbackContext.sendPluginResult(result);
                 }
             });
