@@ -30,27 +30,34 @@ public class MSKConnexientPlugin extends CordovaPlugin {
             case "initAsync": {
                 String apiKey = args.getString(0);
                 this.initAsync(apiKey, callbackContext);
+                return true;
             }
             case "loadMap": {
                 int mapId = args.getInt(0);
                 this.loadMap(mapId, callbackContext);
+                return true;
             }
             case "isMapReady": {
                 int mapId = args.getInt(0);
                 this.isMapReady(mapId, callbackContext);
+                return true;
             }
             case "isMapDownloading": {
                 int mapId = args.getInt(0);
                 this.isMapDownloading(mapId, callbackContext);
+                return true;
             }
             case "searchStaff": {
                 this.searchStaff(callbackContext);
+                return true;
             }
             case "showMap": {
                 this.showMap(callbackContext);
+                return true;
             }
             case "showDirectory": {
                 this.showDirectory(callbackContext);
+                return true;
             }
         }
 
@@ -79,6 +86,7 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                     Medinav.init(currApp);
                     Medinav.loadMap();
                     PluginResult result = new PluginResult(PluginResult.Status.OK);
+                    result.setKeepCallback(true);
                     callbackContext.sendPluginResult(result);
                 }
                 @Override
@@ -86,6 +94,7 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                     String msg = "SDK initialization failed with error code: " + code;
                     Log.e(TAG, msg);
                     PluginResult result = new PluginResult(PluginResult.Status.ERROR, msg);
+                    result.setKeepCallback(true);
                     callbackContext.sendPluginResult(result);
                 }
                 @Override
@@ -93,6 +102,7 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                     String msg = "Exception while initializing SDK: " + throwable.getMessage();
                     Log.e(TAG, msg);
                     PluginResult result = new PluginResult(PluginResult.Status.ERROR, msg);
+                    result.setKeepCallback(true);
                     callbackContext.sendPluginResult(result);
                 }
             });
