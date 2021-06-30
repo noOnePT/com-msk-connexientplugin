@@ -1,0 +1,16 @@
+{
+  "name": "ConnexientPlugin",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.msk.connexientplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.msk.connexientplugin" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>msk-connexient-plugin</name>
+    <js-module name="msk-connexient-plugin" src="www/msk-connexient-plugin.js">
+        <clobbers target="cordova.plugins.connexient" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="MSKConnexientPlugin">
+                <param name="ios-package" value="MSKConnexientPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/MSKConnexientPlugin.m" />
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MSKConnexientPlugin">
+                <param name="android-package" value="com.msk.connexientplugin.MSKConnexientPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/MSKConnexientPlugin.java" target-dir="src/com/msk/connexientplugin/MSKConnexientPlugin" />
+
+        <!-- SDK files -->
+        <resource-file src="src/android/libs/cxt-anx-debug.aar" target="libs/cxt-anx-debug.aar" />
+        <resource-file src="src/android/libs/cxt-anx-release.aar" target="libs/cxt-anx-release.aar" />
+        <resource-file src="src/android/libs/cxt-core-debug.aar" target="libs/cxt-core-debug.aar" />
+        <resource-file src="src/android/libs/cxt-core-release.aar" target="libs/cxt-core-release.aar" />
+        <resource-file src="src/android/libs/cxt-data-debug.aar" target="libs/cxt-data-debug.aar" />
+        <resource-file src="src/android/libs/cxt-data-release.aar" target="libs/cxt-data-release.aar" />
+        <resource-file src="src/android/libs/cxt-loc-debug.aar" target="libs/cxt-loc-debug.aar" />
+        <resource-file src="src/android/libs/cxt-loc-release.aar" target="libs/cxt-loc-release.aar" />
+        <resource-file src="src/android/libs/cxt-map-debug.aar" target="libs/cxt-map-debug.aar" />
+        <resource-file src="src/android/libs/cxt-map-release.aar" target="libs/cxt-map-release.aar" />
+        <resource-file src="src/android/libs/cxt-sdk-debug.aar" target="libs/cxt-sdk-debug.aar" />
+        <resource-file src="src/android/libs/cxt-sdk-release.aar" target="libs/cxt-sdk-release.aar" />
+        <resource-file src="src/android/libs/cxt-vg-debug.aar" target="libs/cxt-vg-debug.aar" />
+        <resource-file src="src/android/libs/cxt-vg-release.aar" target="libs/cxt-vg-release.aar" />
+        <resource-file src="src/android/libs/libVisioMove.aar" target="libs/libVisioMove.aar" />
+        <resource-file src="src/android/libs/mynmsdklibrary-debug.aar" target="libs/mynmsdklibrary-debug.aar" />
+        <resource-file src="src/android/libs/mynmsdklibrary-release.aar" target="libs/mynmsdklibrary-release.aar" />
+        <!-- END SDK files -->
+
+        <!-- AndroidManifiest.xml -->
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+            <uses-permission android:name="android.hardware.place.gps" />
+        </config-file>
+        <!-- END AndroidManifiest.xml -->
+
+        <!-- Assets -->
+        <!-- not using the <asset> tag as it places the file in the wrong directory-->
+        <!--using <resource-file src="src/android/assets" target="assets" /> created issues on removing the plugin from the app-->
+        <resource-file src="src/android/assets/cxtsdk" target="assets/cxtsdk" />
+        <resource-file src="src/android/assets/pdbs" target="assets/pdbs" />
+        <resource-file src="src/android/assets/app.json" target="assets/app.json" />
+        <resource-file src="src/android/assets/firebase.json" target="assets/firebase.json" />
+        <resource-file src="src/android/assets/medinav3-query.db" target="assets/medinav3-query.db" />
+        <resource-file src="src/android/assets/medinav3-staff.db" target="assets/medinav3-staff.db" />
+        <resource-file src="src/android/assets/sdkconfig.json" target="assets/sdkconfig.json" />
+        <resource-file src="src/android/assets/ui-def-firebase.json" target="assets/ui-def-firebase.json" />
+        <!-- END Assets -->
+
+        <!-- Gradle -->
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <!-- END Gradle -->
+    </platform>
+</plugin>

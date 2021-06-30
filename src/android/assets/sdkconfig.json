@@ -1,0 +1,246 @@
+{
+  "response_code": 200,
+  "api_timestamp": "2019-06-12 11:54:54",
+  "response": {
+    "global_date_valid": 1898744400,
+    "components": [
+      {
+        "name": "Analytics",
+        "id": "3",
+        "providers": [{
+          "maps": [],
+          "name": "Connexient",
+          "location_database": [],
+          "id": "6",
+          "config": {
+            "date_valid_timestamp": 1898744400,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "date_valid": "2030-03-03 00:00:00"
+          }
+        }]
+      },
+      {
+        "name": "LBS",
+        "id": "2",
+        "providers": [{
+          "maps": [{
+            "pdb_file_url": "https://cxtadmin-dev.connexient.com/uploads/2019/05/16/70717B0F-B7DB-47FE-9031-82703B16530D.zip",
+            "api_key": "OW6yhjrvpdDVnVR0F9P7Dw",
+            "map_id": "805",
+            "outside_altitude": null,
+            "pdb_path": "4381.jscx",
+            "id": "12636"
+          }],
+          "name": "PoleStar",
+          "location_database": [],
+          "id": "3",
+          "config": {
+            "date_valid_timestamp": 1661140800,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "date_valid": "2022-08-22 00:00:00"
+          }
+        }]
+      },
+      {
+        "name": "Map",
+        "id": "1",
+        "providers": [{
+          "maps": [{
+            "sqlite_db_filename": "locations.db",
+            "view_param_layer_max_size": "300.0",
+            "view_stack_mode": "2",
+            "config_server_url": "https://mapserver.visioglobe.com/",
+            "view_param_far_away_height": "300.0",
+            "background_color2": "",
+            "map_id": "805",
+            "sqlite_map_md5": "03ff20dbc33319a77fca47498c103333",
+            "id": "12843",
+            "sqlite_db_timestamp": "1559844656",
+            "readable_map_name": "westharrison",
+            "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/DC662D14-23E8-40A3-93CF-547F48127CE5.zip",
+            "view_param_layer_distance_from_current": "100.0",
+            "view_route_link_floor": "0",
+            "map_name": "com.gdssigns.data_memorialsk",
+            "mod_analitics_id": "45",
+            "version_timestamp": "20190321194446",
+            "background_color1": "",
+            "config_hash": "m165f4be62365fc64af39a0956d4b3896daac8ace",
+            "sqlite_db_md5": "8231d1b07087214cb4f7768ec5b9a45f",
+            "config_hash_slot": "descriptor.json",
+            "map_description": "Memorial Sloan Kettering",
+            "download_map_url": "https://cxtadmin-dev.connexient.com/downloads/56_805_Data.move.zip",
+            "view_param_stack_view_heading": "-100.0",
+            "license_id": "VgMMT2-com.gdssigns/prod/datademohospital-20160307144854-gdssigns_prod",
+            "view_stack_mode_custom_z": "",
+            "view_stack_mode_custom_y": "",
+            "view_stack_mode_custom_x": "",
+            "view_param_stack_view_pitch": "-50.0",
+            "view_param_layer_distance": "10.0",
+            "secret_code": "291268198"
+          }],
+          "name": "VisioGlobe",
+          "location_database": [
+            {"en_US": {
+              "sqlite_db_filename": "locations.db",
+              "sqlite_db_md5": "8231d1b07087214cb4f7768ec5b9a45f",
+              "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/DC662D14-23E8-40A3-93CF-547F48127CE5.zip",
+              "sqlite_db_timestamp": "1559844655"
+            }},
+            {"es_ES": {
+              "sqlite_db_filename": "locations.db",
+              "sqlite_db_md5": "75ffd7a55da963ba3a803265112e1e6f",
+              "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/6194F7F8-AF35-4017-B691-556668A6EF79.zip",
+              "sqlite_db_timestamp": "1559843482"
+            }}
+          ],
+          "id": "1",
+          "config": {
+            "map_password": "visio10globe57_prod",
+            "date_valid_timestamp": 1824436800,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "map_server_url": "https://mapserver.visioglobe.com/",
+            "map_user_name": "gdssigns_prod",
+            "date_valid": "2027-10-25 00:00:00"
+          }
+        }]
+      },
+      {
+        "name": "Analytics",
+        "id": "3",
+        "providers": [{
+          "maps": [],
+          "name": "Connexient",
+          "location_database": [],
+          "id": "6",
+          "config": {
+            "date_valid_timestamp": 1898744400,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "date_valid": "2030-03-03 00:00:00"
+          }
+        }]
+      },
+      {
+        "name": "LBS",
+        "id": "2",
+        "providers": [{
+          "maps": [{
+            "pdb_file_url": "https://cxtadmin-dev.connexient.com/uploads/2019/05/16/70717B0F-B7DB-47FE-9031-82703B16530D.zip",
+            "api_key": "OW6yhjrvpdDVnVR0F9P7Dw",
+            "map_id": "805",
+            "outside_altitude": null,
+            "pdb_path": "4381.jscx",
+            "id": "12636"
+          }],
+          "name": "PoleStar",
+          "location_database": [],
+          "id": "3",
+          "config": {
+            "date_valid_timestamp": 1661140800,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "date_valid": "2022-08-22 00:00:00"
+          }
+        }]
+      },
+      {
+        "name": "Map",
+        "id": "1",
+        "providers": [{
+          "maps": [{
+            "sqlite_db_filename": "locations.db",
+            "view_param_layer_max_size": "300.0",
+            "view_stack_mode": "2",
+            "config_server_url": "https://mapserver.visioglobe.com/",
+            "view_param_far_away_height": "300.0",
+            "background_color2": "",
+            "map_id": "805",
+            "sqlite_map_md5": "03ff20dbc33319a77fca47498c103333",
+            "id": "12843",
+            "sqlite_db_timestamp": "1559844656",
+            "readable_map_name": "westharrison",
+            "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/DC662D14-23E8-40A3-93CF-547F48127CE5.zip",
+            "view_param_layer_distance_from_current": "100.0",
+            "view_route_link_floor": "0",
+            "map_name": "com.gdssigns.data_memorialsk",
+            "mod_analitics_id": "45",
+            "version_timestamp": "20190321194446",
+            "background_color1": "",
+            "config_hash": "m165f4be62365fc64af39a0956d4b3896daac8ace",
+            "sqlite_db_md5": "8231d1b07087214cb4f7768ec5b9a45f",
+            "config_hash_slot": "descriptor.json",
+            "map_description": "Memorial Sloan Kettering",
+            "download_map_url": "https://cxtadmin-dev.connexient.com/downloads/56_805_Data.move.zip",
+            "view_param_stack_view_heading": "-100.0",
+            "license_id": "VgMMT2-com.gdssigns/prod/datademohospital-20160307144854-gdssigns_prod",
+            "view_stack_mode_custom_z": "",
+            "view_stack_mode_custom_y": "",
+            "view_stack_mode_custom_x": "",
+            "view_param_stack_view_pitch": "-50.0",
+            "view_param_layer_distance": "10.0",
+            "secret_code": "291268198"
+          }],
+          "name": "VisioGlobe",
+          "location_database": [
+            {"en_US": {
+              "sqlite_db_filename": "locations.db",
+              "sqlite_db_md5": "8231d1b07087214cb4f7768ec5b9a45f",
+              "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/DC662D14-23E8-40A3-93CF-547F48127CE5.zip",
+              "sqlite_db_timestamp": "1559844655"
+            }},
+            {"es_ES": {
+              "sqlite_db_filename": "locations.db",
+              "sqlite_db_md5": "75ffd7a55da963ba3a803265112e1e6f",
+              "sqlite_db_url": "https://cxtadmin-dev.connexient.com/uploads/2019/06/06/6194F7F8-AF35-4017-B691-556668A6EF79.zip",
+              "sqlite_db_timestamp": "1559843482"
+            }}
+          ],
+          "id": "1",
+          "config": {
+            "map_password": "visio10globe57_prod",
+            "date_valid_timestamp": 1824436800,
+            "mod_analitics_id": "45",
+            "mod_client_id": "56",
+            "map_server_url": "https://mapserver.visioglobe.com/",
+            "map_user_name": "gdssigns_prod",
+            "date_valid": "2027-10-25 00:00:00"
+          }
+        }]
+      }
+    ],
+    "is_active": "1",
+    "created_at": "2018-08-08 13:47:22",
+    "mod_analitics_id": "45",
+    "network": [],
+    "products": [
+      {
+        "is_active": "1",
+        "name": "Analytics",
+        "id": "3"
+      },
+      {
+        "is_active": "1",
+        "name": "SDK",
+        "id": "1"
+      }
+    ],
+    "crash_reporting_key": "",
+    "updated_at": "2019-04-15 13:18:58",
+    "license_id": "2938FCBC-163F-4BF0-8CB2-55BD7AD912D1",
+    "name": "Memorial Sloan Kettering",
+    "id": "56",
+    "config": {
+      "text_to_speech": true,
+      "validation_map_id": 805,
+      "firebase_id": "memorial-2ce98",
+      "validation_venue_id": 18
+    },
+    "sys_status": {
+      "name": "Enabled",
+      "id": "1"
+    }
+  }
+}

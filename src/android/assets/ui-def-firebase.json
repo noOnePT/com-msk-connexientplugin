@@ -1,0 +1,1111 @@
+{
+  "campus": {
+    "westharrison": {
+      "directory": {
+        "bgColor": "#ffffff",
+        "tiles": {
+          "fontColor": "#40b4e5",
+          "rows": [
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1533666895031.png?alt=media&token=73003569-d425-4c9b-a890-abb27b1b0d2b",
+              "label": "Departments",
+              "localizedLabel": {
+                "en": "Departments",
+                "es": "Departamentos"
+              },
+              "order": 0,
+              "query_key": "f145bd2cd80c2899f0fb7d77c91aefa92048e32a",
+              "target": "didPressFilter"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1544040242653.png?alt=media&token=32196f0f-d9b0-4204-a2a6-4a7771a2e8e1",
+              "label": "Providers",
+              "localizedLabel": {
+                "en": "Providers",
+                "es": "Proveedores de"
+              },
+              "order": 1,
+              "query_key": "e522d56d4a50f8efacb0dbd7308f9d2a3c6489c3",
+              "target": "didPressFilter"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1533666927669.png?alt=media&token=f3de3bf1-2615-4d41-8180-7309378323bd",
+              "label": "Clinics",
+              "localizedLabel": {
+                "en": "Clinics",
+                "es": "Clínicas"
+              },
+              "order": 2,
+              "query_key": "58e0db8c9c0f55836ee782d425c464e083d89070",
+              "target": "didPressFilter"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1533666899974.png?alt=media&token=0000d8f1-956f-43d4-b1ee-fa02553bb93d",
+              "label": "Welcome Desk",
+              "localizedLabel": {
+                "en": "Welcome Desk",
+                "es": "Recepción De Bienvenida"
+              },
+              "order": 3,
+              "query_key": "98d7318226c2d16ec580b57010ac25b0c9391b62",
+              "target": "didPressFilter"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1533666911726.png?alt=media&token=9ad29971-1bbb-45c0-9920-bca939b73ceb",
+              "label": "Parking",
+              "localizedLabel": {
+                "en": "Parking",
+                "es": "Aparcamiento"
+              },
+              "order": 4,
+              "query_key": "select_all_parkings",
+              "target": "didPressParking"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1533666916583.png?alt=media&token=283bc368-5c6e-4053-9e7b-1275e149b785",
+              "label": "Points of Interest",
+              "localizedLabel": {
+                "en": "Points of Interest",
+                "es": "Puntos de Interés"
+              },
+              "order": 5,
+              "query_key": "ba37adbf77363df79a7a6422336da8f91a0fb47c",
+              "target": "didPressFilterGrouped"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1545059622565.png?alt=media&token=38317127-b9c9-49a9-9f8d-cb3a857f26db",
+              "label": "Meet Me",
+              "localizedLabel": {
+                "en": "Meet Me",
+                "es": "Encuéntrame Aquí"
+              },
+              "order": 6,
+              "query_key": "select_all_doctors",
+              "target": "didPressMeetMe"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_1545059662032.png?alt=media&token=978968d4-746c-4162-8768-ac6f3111bbe4",
+              "label": "Favorites",
+              "localizedLabel": {
+                "en": "Favorites",
+                "es": "Favoritos"
+              },
+              "order": 7,
+              "query_key": "select_all_doctors",
+              "target": "didPressFavorites"
+            }
+          ]
+        },
+        "topImgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/directory_top_1533666888877.png?alt=media&token=6863a35d-c1d8-4f20-aa0c-82e8b47c3ebb",
+        "topTitle": {
+          "fontColor": "#000000",
+          "label": "MSK Westchester",
+          "localizedLabel": {
+            "en": "MSK Westchester",
+            "es": "MSK Westchester"
+          }
+        }
+      },
+      "general": {
+        "floorButton": {
+          "bgColor": "#ffffff",
+          "fontColor": "#00AEEF",
+          "imgUrl": "selector_floor.png"
+        },
+        "initialTarget": "didPressDirectory",
+        "navBar": {
+          "bgColor": "#007cba",
+          "fontColor": "#ffffff"
+        },
+        "statusBarStyle": "light"
+      },
+      "menu": {
+        "bgColor": "#40b4e5",
+        "optionsMenu": {
+          "fontColor": "#ffffff",
+          "rows": [
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/img_1527606780680.png?alt=media&token=4268cbea-a23d-4327-81c7-4a86e5aae069",
+              "label": "Maps & Directions",
+              "localizedLabel": {
+                "en": "Maps & Directions",
+                "es": "Mapas Y Direcciones"
+              },
+              "order": 0,
+              "target": "didPressMap"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/img_1527606786208.png?alt=media&token=680b609e-5605-4def-883a-261b1a297756",
+              "label": "Directory",
+              "localizedLabel": {
+                "en": "Directory",
+                "es": "Directorio"
+              },
+              "order": 1,
+              "target": "didPressDirectory"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/img_1516312971902.png?alt=media&token=a006ee0a-e536-4fd4-b1dc-e229d2b98382",
+              "label": "Surveys/Feedback",
+              "localizedLabel": {
+                "en": "Surveys/Feedback",
+                "es": "Encuestas/Comentarios"
+              },
+              "order": 2,
+              "target": "didPressSurveys"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/img_1527606797918.png?alt=media&token=9fffed1f-bf0d-42e5-b061-dca04f3c9919",
+              "label": "Settings",
+              "localizedLabel": {
+                "en": "Settings",
+                "es": "Configuración"
+              },
+              "order": 3,
+              "target": "didPressSettings"
+            },
+            {
+              "imgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/img_1547572523785.png?alt=media&token=407f0d87-8e4f-4b32-bf25-52c85f4b669e",
+              "label": "News",
+              "localizedLabel": {
+                "en": "News",
+                "es": "Noticias"
+              },
+              "order": 4,
+              "target": "didPressNews"
+            }
+          ]
+        },
+        "topImgUrl": "https://firebasestorage.googleapis.com/v0/b/memorial-2ce98.appspot.com/o/top_menu_1537371763075.png?alt=media&token=9a692bdf-5231-481d-97f3-17fe6ed1c2a7"
+      },
+      "name": "westharrison",
+      "navigation": {
+        "yha": {
+          "bgColor": "#ffffff",
+          "button": {
+            "bgColor": "#7dbb3c",
+            "fontColor": "#ffffff",
+            "label": "Leave Feedback",
+            "localizedLabel": {
+              "en": "Leave Feedback"
+            },
+            "target": "didPressLeaveFeedback"
+          },
+          "images": {
+            "rows": [
+              {
+                "height": 35,
+                "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_0_1517347862118.png?alt=media&token=3859afcc-567f-4d7c-9b0f-64455bcdc4ef",
+                "selectedImgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_1_1517347865875.png?alt=media&token=f170f4aa-7122-4b50-8373-17165d17b9d4",
+                "weight": 20,
+                "width": 35
+              },
+              {
+                "height": 35,
+                "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_0_1517347876790.png?alt=media&token=2f1ac087-9413-437b-a99e-25c0efe7e886",
+                "selectedImgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_1_1517347880243.png?alt=media&token=cecbf852-3007-4bf7-ba45-2c9b40c34c0d",
+                "weight": 40,
+                "width": 35
+              },
+              {
+                "height": 35,
+                "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_0_1517347899426.png?alt=media&token=a3535f7f-6d8e-4c54-bff0-fb69ca963697",
+                "selectedImgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_1_1517347902973.png?alt=media&token=07cc0aa2-b22f-4b4f-9c1c-17b6821109a0",
+                "weight": 60,
+                "width": 35
+              },
+              {
+                "height": 35,
+                "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_0_1517347922606.png?alt=media&token=d6eea9fb-38d4-4a4b-8302-4c9b90c0e09f",
+                "selectedImgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_1_1517347926215.png?alt=media&token=ec1433ed-2bbb-4e75-8306-4d3ea198dba1",
+                "weight": 80,
+                "width": 35
+              },
+              {
+                "height": 35,
+                "imgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_0_1517347961055.png?alt=media&token=2fdc15ca-e58c-4065-bfcf-32acacabd6d4",
+                "selectedImgUrl": "https://firebasestorage.googleapis.com/v0/b/baycare-2c858.appspot.com/o/yha_1_1517347968388.png?alt=media&token=37855d0e-b239-4315-b0fd-408cb1ea2015",
+                "weight": 100,
+                "width": 35
+              }
+            ],
+            "selectAllImagesPrior": true
+          },
+          "mandatory": false,
+          "topTitle": {
+            "fontColor": "#000000",
+            "label": "Please rate your experience here",
+            "localizedLabel": {
+              "en": "Please rate your experience here",
+              "es": "Por favor califique su experiencia aquí"
+            }
+          }
+        }
+      },
+      "profile": {
+        "rows": [
+          {
+            "addressFontColor": "#000000",
+            "bgColor": "#ffffff",
+            "buttonBgColor": "#6aa84f",
+            "buttonFontColor": "#ffffff",
+            "name": "header",
+            "order": 0,
+            "subTitleFontColor": "#000000",
+            "topTitleFontColor": "#000000",
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#ffff00",
+            "name": "image",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#000000",
+            "name": "description",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#000000",
+            "name": "options",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "buttonBgColor": "#ffffff",
+            "buttonFontColor": "#000000",
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/project-mid.appspot.com/o/profile_1506449579957.png?alt=media&token=0fb56154-2a60-421b-b1ac-966f40ed7296",
+            "name": "recommendedParking",
+            "order": 4,
+            "topTitleFontColor": "#000000",
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "buttonAddressFontColor": "#000000",
+            "buttonBgColor": "#ffffff",
+            "buttonTitleFontColor": "#000000",
+            "name": "otherOfficeLocations",
+            "order": 5,
+            "topTitleFontColor": "#000000",
+            "visible": true
+          }
+        ]
+      },
+      "queries": {
+        "ba37adbf77363df79a7a6422336da8f91a0fb47c": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT * FROM ( SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at, p.sys_place_position_type_id FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4,12,13,15,18,37,58,60,81,130,171,196,234,235,257) AND p.sys_place_position_type_id = 1 AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id UNION SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at, p.sys_place_position_type_id FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4,10,11,12,13,15,16,18,37,58,60,81,130,171,196,234,235,257) AND p.sys_place_position_type_id = 2 AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ) ORDER BY name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "e522d56d4a50f8efacb0dbd7308f9d2a3c6489c3": {
+          "model": "medinav3-staff",
+          "params": {
+            "mod_venue_id": "?",
+            "sys_staff_type_id": "1"
+          },
+          "query": " SELECT s.id, s.first_name, s.last_name, s.middle_name, s.is_active, additional_info,  s.image_url, s.config FROM mod_staff s WHERE s.is_active = 1  AND s.sys_staff_type_id = :sys_staff_type_id AND s.mod_venue_id = :mod_venue_id    ORDER BY s.last_name, s.first_name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "mst_url_1": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://findadoctor.atlantichealth.org' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "omc_url_1": {
+          "model": "medinav3-sdk",
+          "query": "https://findadoctor.atlantichealth.org' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_artworks": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (130) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_atms": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (10) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_badge_drop": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (235) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_cafeterias": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (233) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_chapels": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (101) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_clinics": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (52) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_clinics_offices": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (52, 165) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_coffee_shops": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (231) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_conference_rooms": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (13) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_courtesy_phones": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (232) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_departments": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (1) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_departments_mash": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (1, 62) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_dinning": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (16) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_dinning_shopping": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (16, 11, 21) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_doctors": {
+          "model": "medinav3-staff",
+          "params": {
+            "mod_venue_id": "?",
+            "sys_staff_type_id": "1"
+          },
+          "query": "SELECT s.id, s.first_name, s.last_name, s.middle_name, s.is_active, additional_info, s.image_url, s.config FROM mod_staff s WHERE s.is_active = 1 AND s.sys_staff_type_id = :sys_staff_type_id AND s.mod_venue_id = :mod_venue_id ORDER BY s.last_name, s.first_name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_doctors_from_speciality": {
+          "model": "medinav3-sdk",
+          "params": {
+            "level2Key": "?",
+            "mod_venue_id": "?",
+            "sys_staff_type_id": "1"
+          },
+          "query": "SELECT DISTINCT s.id, s.first_name, s.last_name, s.middle_name, s.is_active, s.additional_info, s.image_url, s.config FROM mod_staff s LEFT OUTER JOIN mod_specialty sp ON s.id = sp.mod_staff_id WHERE s.is_active = 1 AND s.sys_staff_type_id = :sys_staff_type_id AND s.mod_venue_id = :mod_venue_id AND sp.name = :level2Key ORDER BY s.last_name, s.first_name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_elevators": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (15) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_emergencies": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (62) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_entrances_exits": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_hospital_centers": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (212, 211, 215, 210) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_hospital_departments": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (242) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_hospitalities": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (59) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_imaging": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (72) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_information_desks": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (29) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_lab_draw": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (74) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_laboratories": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (243) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_libraries": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (39, 111) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_lobbies": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (81) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_lounges": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (161) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_mac_suites": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (95) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_medical_buildings": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (75) AND p.sys_place_position_type_id IN (2) AND p.sys_place_type_id IN (3) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_neighborhoods": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (212) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_neighborhoods_outside": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_position_type_id IN (2) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_other_places": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (10, 101, 96, 97, 13, 28, 21, 151) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_outpatient_departments": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (71) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_outside_records": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_position_type_id IN (2) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_outside_stamford": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_position_type_id IN (2) AND p.sys_place_location_type_id NOT IN (165) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pantry": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (204) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_parking_pay": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (20) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_parking_services": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (241, 20, 245) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_parkings": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (7) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_patient_care_rooms": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (210) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_patient_care_units": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (78) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_patient_services": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (5, 246, 247) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pharmacies": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (12) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4, 9, 13, 15, 16, 19, 10, 55, 29, 101, 81, 11, 21, 58, 62, 97, 12, 151, 203, 204, 18, 76, 8, 236) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois_atlantic": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (10, 16, 15, 4, 7, 20, 9, 11, 22, 204) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois_mash": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4, 9, 13, 15, 16, 19, 10, 55, 29, 101, 81, 11, 21, 58, 97, 12, 151, 203, 204, 18, 76, 8, 236, 62) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois_morristown": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (10, 16, 15, 4, 7, 20, 9, 11, 22, 204) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois_msk": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (1, 4, 9, 10, 11, 60, 12, 13, 15, 16, 18, 29, 37,  81, 97, 130, 151, 171, 196, 203, 204, 205, 206, 207, 130, 235) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_pois_stamford": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (16, 9, 11, 10, 21, 4, 15, 22, 12) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_radiology": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (196) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_restrooms": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (9) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_retails": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (237) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_shopping": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (11) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_specialities": {
+          "model": "medinav3-staff",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT DISTINCT sp.name as title, sp.name as level2Key FROM mod_specialty sp LEFT OUTER JOIN mod_staff s ON sp.mod_staff_id = s.id WHERE s.mod_venue_id = :mod_venue_id ORDER BY sp.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_stairs": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (22) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_stamford_pois": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (4, 9, 10, 11, 16, 21, 15, 22) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_transportation": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (82) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_vending_machines": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (21) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_visitor_services": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (10, 206, 101, 97, 15, 4, 205, 29, 58, 9, 22, 161, 183, 102) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_all_waiting_areas": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_venue_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (151) AND p.is_active = 1 AND p.mod_venue_id = :mod_venue_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_bill_pay_stamford": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://www.stamfordhealth.org/patients-visitors/bill-pay/' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_donate_stamford": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://www.stamfordhospitalfoundation.org/foundation/' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_patient_portal_stamford": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://www.stamfordhealth.org/patient-portal/' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_place_address_details": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_place_id": "?"
+          },
+          "query": "SELECT a.*, sat.name as address_type FROM mod_address a LEFT OUTER JOIN sys_address_type sat ON a.sys_address_type_id = sat.id LEFT OUTER JOIN sys_address_link mal ON mod_address_id = a.id AND mal.object_type = 'place' AND mal.object_id = :mod_place_id WHERE sat.name = 'Venue address' ORDER BY a.label",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_schedule_appointment_stamford": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://www.zocdoc.com/hospitals/shmg?promo=sidebutton' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_social_media_stamford": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://stamford-dev.connexient.com/web/social/' as url",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "select_staff_location_details": {
+          "model": "medinav3-sdk",
+          "params": {
+            "mod_place_id": "?"
+          },
+          "query": "SELECT p.id, p.mod_venue_id, p.name, p.map_id, p.tags AS place_tags, lt.id AS place_location_type_id, lt.name AS category, pt.name AS position, ptt.name AS place_type, f.id AS floor_id, f.name AS floor, p.geo_lat, p.geo_long, p.geo_alt, p.scene_lat, p.scene_long, p.scene_alt, p.is_active, p.config, p.created_at, p.updated_at FROM mod_place p LEFT OUTER JOIN sys_place_location_type lt ON p.sys_place_location_type_id = lt.id LEFT OUTER JOIN sys_place_position_type pt ON p.sys_place_position_type_id = pt.id LEFT OUTER JOIN sys_place_type ptt ON p.sys_place_type_id = ptt.id LEFT OUTER JOIN mod_floor f ON p.mod_floor_id = f.id WHERE p.sys_place_location_type_id IN (78) AND p.is_active = 1 AND p.id = :mod_place_id ORDER BY p.name",
+          "use_android": 1,
+          "use_ios": 1
+        },
+        "stamford_url_1": {
+          "model": "medinav3-sdk",
+          "query": "SELECT 'https://www.stamfordhealth.org/patient-portal/' as url",
+          "use_android": 1,
+          "use_ios": 1
+        }
+      },
+      "staffProfile": {
+        "rows": [
+          {
+            "addressFontColor": "#000000",
+            "bgColor": "#ffffff",
+            "buttonBgColor": "#6aa84f",
+            "buttonFontColor": "#ffffff",
+            "name": "header",
+            "order": 0,
+            "subTitleFontColor": "#000000",
+            "topTitleFontColor": "#000000",
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#ffff00",
+            "name": "image",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#000000",
+            "name": "description",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "fontColor": "#000000",
+            "name": "options",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "buttonBgColor": "#ffffff",
+            "buttonFontColor": "#000000",
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/project-mid.appspot.com/o/profile_1506449579957.png?alt=media&token=0fb56154-2a60-421b-b1ac-966f40ed7296",
+            "name": "recommendedParking",
+            "order": 4,
+            "topTitleFontColor": "#000000",
+            "visible": true
+          },
+          {
+            "bgColor": "#f2f2f2",
+            "buttonAddressFontColor": "#000000",
+            "buttonBgColor": "#ffffff",
+            "buttonTitleFontColor": "#000000",
+            "name": "otherOfficeLocations",
+            "order": 5,
+            "topTitleFontColor": "#000000",
+            "visible": true
+          }
+        ]
+      },
+      "targets": {
+        "directory": [
+          {
+            "call": "didPressFilter",
+            "name": "Filter Controller"
+          },
+          {
+            "call": "didPressDisabled",
+            "name": "Disabled"
+          },
+          {
+            "call": "didPressFavorites",
+            "name": "Favorites Controller"
+          },
+          {
+            "call": "didPressParking",
+            "name": "Parking Controller"
+          },
+          {
+            "call": "didPressFilterGrouped",
+            "name": "Grouped Filter Controller"
+          },
+          {
+            "call": "didPressOpenUrl",
+            "name": "URL WebController"
+          },
+          {
+            "call": "didPressMeetMe",
+            "name": "MeetMe Controller"
+          },
+          {
+            "call": "didPressTwoLevelFilter",
+            "name": "2 Level Filter Controller"
+          }
+        ],
+        "initialTarget": [
+          {
+            "call": "didPressMap",
+            "name": "Map"
+          },
+          {
+            "call": "didPressDirectory",
+            "name": "Directory"
+          }
+        ],
+        "menu": [
+          {
+            "call": "didPressMap",
+            "name": "Map"
+          },
+          {
+            "call": "didPressDirectory",
+            "name": "Directory"
+          },
+          {
+            "call": "didPressSettings",
+            "name": "Settings"
+          },
+          {
+            "call": "didPressNews",
+            "name": "News"
+          },
+          {
+            "call": "didPressShare",
+            "name": "Share"
+          },
+          {
+            "call": "didPressCampusLocations",
+            "name": "Campus Locations"
+          },
+          {
+            "call": "didPressSurveys",
+            "name": "Surveys/Feedback"
+          }
+        ],
+        "walkthrough": [
+          {
+            "call": "didPressNext",
+            "name": "Go Next"
+          },
+          {
+            "call": "didPressPrevious",
+            "name": "Go back"
+          },
+          {
+            "call": "didPressSkip",
+            "name": "Skip Walkthrough"
+          },
+          {
+            "call": "didPressOpenUrlWithUrl",
+            "name": "Learn More - Open URL"
+          }
+        ],
+        "yha": [
+          {
+            "call": "didPressLeaveFeedback",
+            "name": "Leave Feedback"
+          }
+        ]
+      },
+      "translations": {
+        "en": "en",
+        "es": "es"
+      }
+    }
+  }
+}
