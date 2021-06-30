@@ -44,7 +44,7 @@
         <!-- END SDK files -->
 
         <!-- AndroidManifiest.xml -->
-        <config-file target="AndroidManifest.xml" parent="/manifest" mode="merge">
+        <config-file target="AndroidManifest.xml" parent="/manifest" mode="overwrite">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
             <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
