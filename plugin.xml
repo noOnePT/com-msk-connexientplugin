@@ -55,18 +55,30 @@
         </config-file>
         <!-- END AndroidManifiest.xml -->
 
+        <!-- AndroidManifiest.xml Application attributes -->
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+            <application android:theme="@style/Theme.AppCompat.Light" />
+        </edit-config>
+        <!-- END AndroidManifiest.xml Application attributes -->
+
         <!-- Assets -->
         <!-- not using the <asset> tag as it places the file in the wrong directory-->
-        <!--using <resource-file src="src/android/assets" target="assets" /> created issues on removing the plugin from the app-->
         <resource-file src="src/android/assets/cxtsdk" target="assets/cxtsdk" />
         <resource-file src="src/android/assets/pdbs" target="assets/pdbs" />
         <resource-file src="src/android/assets/app.json" target="assets/app.json" />
+        <resource-file src="src/android/assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" target="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
         <resource-file src="src/android/assets/firebase.json" target="assets/firebase.json" />
         <resource-file src="src/android/assets/medinav3-query.db" target="assets/medinav3-query.db" />
         <resource-file src="src/android/assets/medinav3-staff.db" target="assets/medinav3-staff.db" />
-        <resource-file src="src/android/assets/sdkconfig.json" target="assets/sdkconfig.json" />
+        <resource-file src="src/android/assets/images.db" target="assets/images.db" />        
+        <resource-file src="src/android/assets/config.json" target="assets/config.json" />
         <resource-file src="src/android/assets/ui-def-firebase.json" target="assets/ui-def-firebase.json" />
         <!-- END Assets -->
+
+        <!-- Drawables -->
+        <resource-file src="src/android/assets/app_directory_top.png" target="res/drawable/app_directory_top.png" />
+        <resource-file src="src/android/assets/app_directory_top.png" target="res/drawable-port-hdpi/app_directory_top.png" />
+        <!-- END Drawables -->
 
         <!-- Gradle -->
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />

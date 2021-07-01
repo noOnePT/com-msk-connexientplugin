@@ -59,6 +59,11 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                 this.showDirectory(callbackContext);
                 return true;
             }
+            case "openLink": {
+                String deepLink = args.getString(0);
+                this.openLink(callbackContext, deepLink);
+                return true;
+            }
         }
 
         return false;
@@ -141,6 +146,12 @@ public class MSKConnexientPlugin extends CordovaPlugin {
     private void showDirectory(CallbackContext callbackContext) {
         Medinav.showDirectory(this.cordova.getActivity());
         PluginResult result = new PluginResult(PluginResult.Status.OK, "Directory will shown");
+        callbackContext.sendPluginResult(result);
+    }
+
+    private void openLink(CallbackContext callbackContext, String deepLink) {
+        Medinav.openLink(this.cordova.getActivity(), deepLink);
+        PluginResult result = new PluginResult(PluginResult.Status.OK, "openLink was called");
         callbackContext.sendPluginResult(result);
     }
 }

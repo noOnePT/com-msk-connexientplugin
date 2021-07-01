@@ -33,5 +33,8 @@ module.exports = {
     },
     showDirectory: function (success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'showDirectory');
+    },
+    openLink: function (deepLink, success, error) {
+        exec(success, error, 'MSKConnexientPlugin', 'openLink', [deepLink]);
     }
 }
