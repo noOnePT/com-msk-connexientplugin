@@ -13,7 +13,6 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class MSKConnexientPlugin extends CordovaPlugin {
 
@@ -37,14 +36,26 @@ public class MSKConnexientPlugin extends CordovaPlugin {
                 this.loadMap(mapId, callbackContext);
                 return true;
             }
+            case "loadMapNoId": {
+                this.loadMap(null, callbackContext);
+                return true;
+            }
             case "isMapReady": {
                 int mapId = args.getInt(0);
                 this.isMapReady(mapId, callbackContext);
                 return true;
             }
+            case "isMapReadyNoId": {
+                this.isMapReady(null, callbackContext);
+                return true;
+            }
             case "isMapDownloading": {
                 int mapId = args.getInt(0);
                 this.isMapDownloading(mapId, callbackContext);
+                return true;
+            }
+            case "isMapDownloadingNoId": {
+                this.isMapDownloading(null, callbackContext);
                 return true;
             }
             case "searchStaff": {
@@ -113,45 +124,94 @@ public class MSKConnexientPlugin extends CordovaPlugin {
             });
     }
 
-    private void loadMap(int mapId, CallbackContext callbackContext) {
-        Medinav.loadMap(mapId);
-        PluginResult result = new PluginResult(PluginResult.Status.OK, "Map loaded");
-        callbackContext.sendPluginResult(result);
+    private void loadMap(Integer mapId, CallbackContext callbackContext) {
+        try {
+            if (mapId == null){
+                Medinav.loadMap();
+            } else {
+                Medinav.loadMap(mapId);
+            }
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "Map loaded");
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
-    private void isMapReady(int mapId, CallbackContext callbackContext) {
-        boolean isMapReady = Medinav.isMapReady(mapId);
-        PluginResult result = new PluginResult(PluginResult.Status.OK, isMapReady);
-        callbackContext.sendPluginResult(result);
+    private void isMapReady(Integer mapId, CallbackContext callbackContext) {
+        try {
+            boolean isMapReady;
+            if (mapId == null) {
+                isMapReady = Medinav.isMapReady();
+            } else {
+                isMapReady = Medinav.isMapReady(mapId);
+            }
+            PluginResult result = new PluginResult(PluginResult.Status.OK, isMapReady);
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
-    private void isMapDownloading(int mapId, CallbackContext callbackContext) {
-        boolean isMapDownloading = Medinav.isMapDownloading(mapId);
-        PluginResult result = new PluginResult(PluginResult.Status.OK, isMapDownloading);
-        callbackContext.sendPluginResult(result);
+    private void isMapDownloading(Integer mapId, CallbackContext callbackContext) {
+        try {
+            boolean isMapDownloading;
+            if (mapId == null){
+                isMapDownloading = Medinav.isMapDownloading();
+            } else {
+                isMapDownloading = Medinav.isMapDownloading(mapId);
+            }
+            PluginResult result = new PluginResult(PluginResult.Status.OK, isMapDownloading);
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
     private void searchStaff(CallbackContext callbackContext) {
-        Medinav.searchStaff(this.cordova.getActivity());
-        PluginResult result = new PluginResult(PluginResult.Status.OK, "SearchStaff called");
-        callbackContext.sendPluginResult(result);
+        try{
+            Medinav.searchStaff(this.cordova.getActivity());
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "SearchStaff called");
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
     private void showMap(CallbackContext callbackContext) {
-        Medinav.showMap(this.cordova.getActivity());
-        PluginResult result = new PluginResult(PluginResult.Status.OK, "Map will shown");
-        callbackContext.sendPluginResult(result);
+        try{
+            Medinav.showMap(this.cordova.getActivity());
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "Map will shown");
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
     private void showDirectory(CallbackContext callbackContext) {
-        Medinav.showDirectory(this.cordova.getActivity());
-        PluginResult result = new PluginResult(PluginResult.Status.OK, "Directory will shown");
-        callbackContext.sendPluginResult(result);
+        try{
+            Medinav.showDirectory(this.cordova.getActivity());
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "Directory will shown");
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 
     private void openLink(CallbackContext callbackContext, String deepLink) {
-        Medinav.openLink(this.cordova.getActivity(), deepLink);
-        PluginResult result = new PluginResult(PluginResult.Status.OK, "openLink was called");
-        callbackContext.sendPluginResult(result);
+        try{
+            Medinav.openLink(this.cordova.getActivity(), deepLink);
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "openLink was called");
+            callbackContext.sendPluginResult(result);
+        } catch (Exception e){
+            PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
+            callbackContext.sendPluginResult(result);
+        }
     }
 }

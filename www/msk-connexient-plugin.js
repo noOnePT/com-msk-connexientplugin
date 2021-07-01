@@ -17,13 +17,25 @@ module.exports = {
         exec(success, error, 'MSKConnexientPlugin', 'initAsync', [apiKey]);
     },
     loadMap: function (mapId, success, error) {
-        exec(success, error, 'MSKConnexientPlugin', 'loadMap', [mapId]);
+        if (mapId === undefined){
+            exec(success, error, 'MSKConnexientPlugin', 'loadMapNoId');
+        } else {
+            exec(success, error, 'MSKConnexientPlugin', 'loadMap', [mapId]);
+        }
     },
     isMapDownloading: function (mapId, success, error) {
-        exec(success, error, 'MSKConnexientPlugin', 'isMapDownloading', [mapId]);
+        if (mapId === undefined){
+            exec(success, error, 'MSKConnexientPlugin', 'isMapDownloadingNoId');
+        } else {
+            exec(success, error, 'MSKConnexientPlugin', 'isMapDownloading', [mapId]);
+        }
     },
     isMapReady: function (mapId, success, error) {
-        exec(success, error, 'MSKConnexientPlugin', 'isMapReady', [mapId]);
+        if (mapId === undefined){
+            exec(success, error, 'MSKConnexientPluginNoId', 'isMapReady');
+        } else {
+            exec(success, error, 'MSKConnexientPlugin', 'isMapReady', [mapId]);
+        }
     },
     searchStaff: function (mapId, success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'searchStaff');
