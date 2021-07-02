@@ -14,6 +14,7 @@
         </config-file>
         <source-file src="src/ios/MSKConnexientPlugin.m" />
     </platform>
+
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="MSKConnexientPlugin">
@@ -23,6 +24,10 @@
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/MSKConnexientPlugin.java" target-dir="src/com/msk/connexientplugin/MSKConnexientPlugin" />
 
+         <config-file target="../../config.xml" parent="/widget">
+            <custom-preference name="android-manifest/@xmlns:tools" value="http://schemas.android.com/tools" />
+        </config-file>
+        
         <!-- Preferences -->
         <preference name="GOOGLEMAPS_APIKEY" />
         <!-- END Preferences -->
@@ -60,9 +65,9 @@
         <!-- END AndroidManifiest.xml -->
 
         <!-- AndroidManifiest.xml Meta data -->
-        <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+        <!--<edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
             <manifest xmlns:tools="http://schemas.android.com/tools" />
-        </edit-config>
+        </edit-config>-->
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data
@@ -100,5 +105,7 @@
         <!-- Gradle -->
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
         <!-- END Gradle -->
+
+        <dependency id="cordova-custom-config" version="^5.1.0" />
     </platform>
 </plugin>
