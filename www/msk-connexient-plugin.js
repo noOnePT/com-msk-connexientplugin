@@ -37,7 +37,7 @@ module.exports = {
             exec(success, error, 'MSKConnexientPlugin', 'isMapReady', [mapId]);
         }
     },
-    searchStaff: function (mapId, success, error) {
+    searchStaff: function (success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'searchStaff');
     },
     showMap: function (success, error) {
