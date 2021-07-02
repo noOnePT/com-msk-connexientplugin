@@ -23,6 +23,10 @@
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/MSKConnexientPlugin.java" target-dir="src/com/msk/connexientplugin/MSKConnexientPlugin" />
 
+        <!-- Preferences -->
+        <preference name="GOOGLEMAPS_APIKEY" />
+        <!-- END Preferences -->
+
         <!-- SDK files -->
         <resource-file src="src/android/libs/cxt-anx-debug.aar" target="libs/cxt-anx-debug.aar" />
         <resource-file src="src/android/libs/cxt-anx-release.aar" target="libs/cxt-anx-release.aar" />
@@ -43,7 +47,7 @@
         <resource-file src="src/android/libs/mynmsdklibrary-release.aar" target="libs/mynmsdklibrary-release.aar" />
         <!-- END SDK files -->
 
-        <!-- AndroidManifiest.xml -->
+        <!-- AndroidManifiest.xml Permissions -->
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
@@ -54,6 +58,15 @@
             <uses-permission android:name="android.hardware.place.gps" />
         </config-file>
         <!-- END AndroidManifiest.xml -->
+
+        <!-- AndroidManifiest.xml Meta data -->
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data
+                tools:replace="android:value"
+                android:name="com.google.android.geo.API_KEY"
+                android:value="$GOOGLEMAPS_APIKEY" />
+        </config-file>
+        <!-- END AndroidManifiest.xml Meta data -->
 
         <!-- AndroidManifiest.xml Application attributes -->
         <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
