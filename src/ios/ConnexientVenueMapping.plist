@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Westchester</key>
+	<dict>
+		<key>VenueId</key>
+		<string>805</string>
+	</dict>
+	<key>Koch</key>
+	<dict>
+		<key>VenueId</key>
+		<string>3025</string>
+	</dict>
+</dict>
+</plist>

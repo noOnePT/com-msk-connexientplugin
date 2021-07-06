@@ -1,0 +1,6 @@
+framework module ConnexientUI {
+  umbrella header "ConnexientUI.h"
+
+  export *
+  module * { export * }
+}

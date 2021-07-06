@@ -1,0 +1,4 @@
+framework module ConnexientKit {
+  umbrella header "ConnexientKit.h"
+
+}

@@ -1,0 +1,5 @@
+framework module ConnexientLocationKit {
+  umbrella header "ConnexientLocationKit.h"
+  export *
+  module * { export * }
+}

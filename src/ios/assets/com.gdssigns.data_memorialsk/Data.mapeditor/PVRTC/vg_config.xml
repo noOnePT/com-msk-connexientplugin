@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vgconfig version="2">
+    <init mode="mapMode"/>
+    <flags>
+        <flag name="distanceFactor" value="0.3" />
+        <flag name="noUnload" value="1" />
+        <flag name="mapDebugLabels" value="0" />
+        <flag name="mapLabelOrientation" value="eFaceUpOrDown" />
+        <flag name="updateFrameRateLimit" value="-1" />
+        <flag name="renderFrameRateLimit" value="-1" />
+    </flags>
+    <!-- VisioMove < v2.1.19 will use vg2DManipulator -->
+    <vg2DManipulator maxAltitude="2000.0" minAltitude="20" doubleFingerYawing="on" />
+    <!-- VisioMove >= v2.1.19 will use vgDragManipulator -->
+    <vgDragManipulator maxDistance="2000.0" minDistance="20" doubleFingerYawing="on" />
+    <camera pitch="-60.0" yaw="-14.70246"/>
+    <resources>
+        <databases>
+            <database resource="datamskcc.20191205.sqlite"/>
+        </databases>
+        <models>
+            <model id="ArbreC" resource="ArbreC.vsg4"/>
+            <model id="mskcc" resource="mskcc.vsg4"/>
+            <model id="mskcc_arbres" resource="mskcc_arbres.vsg4"/>
+            <model id="mskcc_relief" resource="mskcc_relief.vsg4"/>
+        </models>
+    </resources>
+    <datasets>
+        <dataset name="0" pickTags="floor" dynamicClipping="on">
+            <background color1="0xffffffff" color2="0xffffffff" />
+            <camera x="0.0" y="0.0" height="700.0"/>
+            <layer name="outside" semanticTag="floor" type="VgSimpleLayer" archive="data/datamskcc.outside.20191205.bin" distancePolicy="eWorldAxisZ" LODFactor="0.25" loadFactor="0.025">
+                <model resource="mskcc_relief" transform="translate(-25.990322975269,-1.7273158482913,0)*rotateZ(-14.70246)*scale(2.5288065794649,2.5288065794649,2.5288065794649)"/>
+                <model resource="mskcc_arbres" transform="translate(-26.444747050052,1.0564995584761,0)*rotateZ(-14.70246)*scale(0.99715092576886,0.99715092576886,0.99715092576886)"/>
+                <model id="B1" resource="mskcc" transform="translate(-43.347781907856,-9.416784804873,0)*rotateZ(-14.70246)*scale(2.5487486003602,2.5487486003602,2.5487486003602)"/>
+                <model resource="ArbreC" transform="translate(-60.860490547559,17.820496974329,0)*rotateZ(-14.70246)*scale(0.40127998762446,0.40127998762446,0.40127998762446)"/>
+                <model resource="ArbreC" transform="translate(-55.771625200544,18.183731812505,0)*rotateZ(-14.70246)*scale(0.40127998762446,0.40127998762446,0.40127998762446)"/>
+                <model resource="ArbreC" transform="translate(-53.687497990903,25.264815002317,0)*rotateZ(-14.70246)*scale(0.40127998762446,0.40127998762446,0.40127998762446)"/>
+                <model resource="ArbreC" transform="translate(-57.524774503123,24.041939920752,0)*rotateZ(-14.70246)*scale(0.40127998762446,0.40127998762446,0.40127998762446)"/>
+                <model resource="ArbreC" transform="translate(-62.149647195881,21.910379604634,0)*rotateZ(-14.70246)*scale(0.40127998762446,0.40127998762446,0.40127998762446)"/>
+            </layer>
+            <layer name="B1-UL0" semanticTag="floor" type="VgSimpleLayer" archive="data/datamskcc.B1-UL0.20191205.bin" distancePolicy="eWorldAxisZ" LODFactor="0.25" loadFactor="0.025">
+                <model resource="ArbreC" transform="translate(-63.898698990941,21.798960155308,0)*rotateZ(-14.70246)*scale(0.19802593335495,0.19802593335495,0.19802593335495)"/>
+                <model resource="ArbreC" transform="translate(-63.400240091867,19.510510883995,0)*rotateZ(-14.70246)*scale(0.19802593335495,0.19802593335495,0.19802593335495)"/>
+                <model resource="ArbreC" transform="translate(-63.056982901096,17.924608189398,0)*rotateZ(-14.70246)*scale(0.19802593335495,0.19802593335495,0.19802593335495)"/>
+            </layer>
+            <layer name="B1-UL1" semanticTag="floor" type="VgSimpleLayer" archive="data/datamskcc.B1-UL1.20191205.bin" distancePolicy="eWorldAxisZ" LODFactor="0.25" loadFactor="0.025">
+            </layer>
+
+            <limits>
+                <min lat="41.025872370857" lon="-73.736025734725" height="0.0" />
+                <max lat="41.030338460564" lon="-73.730128202392" height="50.0" />
+            </limits>
+        </dataset>
+    </datasets>
+</vgconfig>

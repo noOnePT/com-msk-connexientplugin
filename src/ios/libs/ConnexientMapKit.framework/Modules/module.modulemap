@@ -1,0 +1,5 @@
+framework module ConnexientMapKit {
+  umbrella header "ConnexientMapKit.h"
+  export *
+  module * { export * }
+}

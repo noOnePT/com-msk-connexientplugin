@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vglicense version="2">
+	<keys>
+		<key>
+			<!-- License for PROD SDKv2 (NEVER expires) -->
+			<license id="prod-ios-android" timeStamp="20191205204519000000"/>
+			<secret code="gjfeCrdWZC+cqPbeTDCz4Q=="/>
+
+			<machine code="*" expirationDate="never"/>
+
+			<sdk id="VisioDevKit/2.0/iPhone/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/iPhoneSimulator/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/Android/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/Android(ARM)/OGLES" expirationDate="never"/>
+
+			<data id="datamskkoch.outside.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-LL1.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL0.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL3.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL4.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL5.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL6.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL7.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL10.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL11.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL12.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL13.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL14.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL15.20191205" expirationDate="never"/>
+			<data id="datamskkoch.B1-UL16.20191205" expirationDate="never"/>
+
+			<token name="com.visioglobe.modules.3d" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.map" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.routing" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.navigation" value="1" expirationDate="never"/>
+
+			<check code="Xn2aJpWMC2e3eQEORNKzWA=="/>
+		</key>
+	</keys>
+</vglicense>

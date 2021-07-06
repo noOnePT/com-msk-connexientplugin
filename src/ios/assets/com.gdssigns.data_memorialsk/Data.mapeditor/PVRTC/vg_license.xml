@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vglicense version="2">
+	<keys>
+		<key>
+			<!-- License for PROD SDKv2 (NEVER expires) -->
+			<license id="prod-ios-android" timeStamp="20191205210314000000"/>
+			<secret code="gjfeCrdWZC+cqPbeTDCz4Q=="/>
+
+			<machine code="*" expirationDate="never"/>
+
+			<sdk id="VisioDevKit/2.0/iPhone/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/iPhoneSimulator/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/Android/OGLES" expirationDate="never"/>
+			<sdk id="VisioDevKit/2.0/Android(ARM)/OGLES" expirationDate="never"/>
+
+			<data id="datamskcc.outside.20191205" expirationDate="never"/>
+			<data id="datamskcc.B1-UL0.20191205" expirationDate="never"/>
+			<data id="datamskcc.B1-UL1.20191205" expirationDate="never"/>
+
+			<token name="com.visioglobe.modules.3d" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.map" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.routing" value="1" expirationDate="never"/>
+			<token name="com.visioglobe.modules.navigation" value="1" expirationDate="never"/>
+
+			<check code="zxRTpZuMs52dISWqizg7Xw=="/>
+		</key>
+	</keys>
+</vglicense>

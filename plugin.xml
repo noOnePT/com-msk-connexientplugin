@@ -6,6 +6,14 @@
     <js-module name="msk-connexient-plugin" src="www/msk-connexient-plugin.js">
         <clobbers target="cordova.plugins.connexient" />
     </js-module>
+
+    <!-- Preferences -->
+    <preference name="GOOGLEMAPS_APIKEY" />
+    <preference name="NSLOCATIONWHENINUSEUSAGEDESCRIPTION" default="Need location access to find things nearby" />
+    <preference name="NSLOCATIONALWAYSANDWHENINUSEUSAGEDESCRIPTION" default="Need location access to find things nearby in background" />
+    <preference name="NSBLUETOOTHALWAYSUSAGEDESCRIPTION" default="Need bluetooth to comunicate with devices nearby"/>
+    <!-- END Preferences -->
+
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="MSKConnexientPlugin">
@@ -13,6 +21,73 @@
             </feature>
         </config-file>
         <source-file src="src/ios/MSKConnexientPlugin.m" />
+
+        <!-- SDK files -->
+        <framework src="src/ios/libs/ConnexientAnalyticsKit.framework" embed="true" custom="true" />
+        <framework src="src/ios/libs/ConnexientKit.framework" embed="true" custom="true" />
+        <framework src="src/ios/libs/ConnexientLocationKit.framework" embed="true" custom="true" />
+        <framework src="src/ios/libs/ConnexientMapKit.framework" embed="true" custom="true" />
+        <framework src="src/ios/libs/ConnexientUI.framework" embed="true" custom="true" />
+        <!-- END SDK files -->
+
+
+        <!-- Info.plist - UIBackgroundModes -->
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>bluetooth-central</string>
+                <string>location</string>
+            </array>
+        </config-file>
+        <!-- END Info.plist - UIBackgroundModes -->
+
+        <!-- Info.plist - LSApplicationQueriesSchemes -->
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <array>
+                <string>googlechromes</string>
+                <string>comgooglemaps</string>
+                <string>waze</string>
+            </array>
+        </config-file>
+        <!-- END Info.plist - LSApplicationQueriesSchemes -->
+        
+        <!-- Info.plist - LSApplicationQueriesSchemes -->
+        <config-file target="*-Info.plist">
+            <key>UIStatusBarHidden</key>
+            <string>false</string>
+            <key>UIViewControllerBasedStatusBarAppearance</key>
+            <string>false</string>
+        </config-file>
+        <!-- END Info.plist - LSApplicationQueriesSchemes -->
+
+        <!-- Info.xml Permissions -->
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>$NSLOCATIONWHENINUSEUSAGEDESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>$NSLOCATIONALWAYSANDWHENINUSEUSAGEDESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
+            <string>$NSBLUETOOTHALWAYSUSAGEDESCRIPTION</string>
+        </config-file>
+        <!-- Info.xml Permissions -->
+
+
+        <!-- Assets -->
+        <!-- not using the <asset> tag as it places the file in the wrong directory-->
+        <resource-file src="src/ios/assets/com.gdssigns.data_memorialsk" target="com.gdssigns.data_memorialsk" />
+        <resource-file src="src/ios/assets/com.gdssigns.datamskkoch" target="com.gdssigns.datamskkoch" />
+        <resource-file src="src/ios/assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" target="2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
+        <resource-file src="src/ios/assets/config.json" target="config.json" />
+        <resource-file src="src/ios/assets/en_locations.db" target="en_locations.db" />
+        <resource-file src="src/ios/assets/es_locations.db" target="es_locations.db" />
+        <resource-file src="src/ios/assets/ru_locations.db" target="ru_locations.db" />
+        <resource-file src="src/ios/assets/zh_locations.db" target="zh_locations.db" />
+        <resource-file src="src/ios/assets/firebase.json" target="firebase.json" />
+        <resource-file src="src/ios/assets/images.db" target="images.db" />        
+        <resource-file src="src/ios/assets/medinav3-query.db" target="medinav3-query.db" />
+        <resource-file src="src/ios/assets/medinav3-staff.db" target="medinav3-staff.db" />
+        <!-- END Assets -->
+
     </platform>
 
     <platform name="android">
@@ -27,10 +102,6 @@
          <config-file target="../../config.xml" parent="/widget">
             <custom-preference name="android-manifest/@xmlns:tools" value="http://schemas.android.com/tools" />
         </config-file>
-        
-        <!-- Preferences -->
-        <preference name="GOOGLEMAPS_APIKEY" />
-        <!-- END Preferences -->
 
         <!-- SDK files -->
         <resource-file src="src/android/libs/cxt-anx-debug.aar" target="libs/cxt-anx-debug.aar" />
