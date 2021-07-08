@@ -1,5 +1,0 @@
-QA build.
-
-HRM-526: Add Validic v2 URL handling in Messages.
-
-REMINDER: You must be on MSK Wi-Fi (not guest) or connected with Pulse Secure to access all features.
