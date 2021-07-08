@@ -143,9 +143,18 @@
         <!-- END AndroidManifiest.xml Meta data -->
 
         <!-- AndroidManifiest.xml Application attributes -->
-        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+        <!--<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application android:theme="@style/Theme.AppCompat.Light" />
-        </edit-config>
+        </edit-config>-->
+
+        <config-file target="../../config.xml" parent="/widget" >
+            <platform name="android">
+                <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+                    <application android:theme="@style/Theme.AppCompat.Light" />
+                </edit-config>
+            </platform>
+        </config-file>
+       
         <!-- END AndroidManifiest.xml Application attributes -->
 
         <!-- Assets -->
