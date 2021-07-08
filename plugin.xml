@@ -7,7 +7,11 @@
         <clobbers target="cordova.plugins.connexient" />
     </js-module>
 
+    <hook type="before_plugin_install" src="hooks/installDependencies.js" />
+	<hook type="before_plugin_install" src="hooks/unzipAndCopyAssets.js" />
+
     <!-- Preferences -->
+    <!--<preference name="CONNEXIENT_APIKEY" />-->
     <preference name="GOOGLEMAPS_APIKEY" />
     <preference name="NSLOCATIONWHENINUSEUSAGEDESCRIPTION" default="Need location access to find things nearby" />
     <preference name="NSLOCATIONALWAYSANDWHENINUSEUSAGEDESCRIPTION" default="Need location access to find things nearby in background" />
@@ -74,18 +78,8 @@
 
         <!-- Assets -->
         <!-- not using the <asset> tag as it places the file in the wrong directory-->
-        <resource-file src="src/ios/assets/com.gdssigns.data_memorialsk" target="com.gdssigns.data_memorialsk" />
-        <resource-file src="src/ios/assets/com.gdssigns.datamskkoch" target="com.gdssigns.datamskkoch" />
-        <resource-file src="src/ios/assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" target="2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
-        <resource-file src="src/ios/assets/config.json" target="config.json" />
-        <resource-file src="src/ios/assets/en_locations.db" target="en_locations.db" />
-        <resource-file src="src/ios/assets/es_locations.db" target="es_locations.db" />
-        <resource-file src="src/ios/assets/ru_locations.db" target="ru_locations.db" />
-        <resource-file src="src/ios/assets/zh_locations.db" target="zh_locations.db" />
-        <resource-file src="src/ios/assets/firebase.json" target="firebase.json" />
-        <resource-file src="src/ios/assets/images.db" target="images.db" />        
-        <resource-file src="src/ios/assets/medinav3-query.db" target="medinav3-query.db" />
-        <resource-file src="src/ios/assets/medinav3-staff.db" target="medinav3-staff.db" />
+        <resource-file src="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
+        <resource-file src="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.zip" /> 
         <!-- END Assets -->
 
     </platform>
@@ -156,21 +150,21 @@
 
         <!-- Assets -->
         <!-- not using the <asset> tag as it places the file in the wrong directory-->
-        <resource-file src="src/android/assets/cxtsdk" target="assets/cxtsdk" />
-        <resource-file src="src/android/assets/pdbs" target="assets/pdbs" />
-        <resource-file src="src/android/assets/app.json" target="assets/app.json" />
-        <resource-file src="src/android/assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" target="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
-        <resource-file src="src/android/assets/firebase.json" target="assets/firebase.json" />
-        <resource-file src="src/android/assets/medinav3-query.db" target="assets/medinav3-query.db" />
-        <resource-file src="src/android/assets/medinav3-staff.db" target="assets/medinav3-staff.db" />
-        <resource-file src="src/android/assets/images.db" target="assets/images.db" />        
-        <resource-file src="src/android/assets/config.json" target="assets/config.json" />
-        <resource-file src="src/android/assets/ui-def-firebase.json" target="assets/ui-def-firebase.json" />
+        <resource-file src="assets/cxtsdk" target="assets/cxtsdk" />
+        <resource-file src="assets/pdbs" target="assets/pdbs" />
+        <resource-file src="assets/app.json" target="assets/app.json" />
+        <resource-file src="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" target="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
+        <resource-file src="assets/firebase.json" target="assets/firebase.json" />
+        <resource-file src="assets/medinav3-query.db" target="assets/medinav3-query.db" />
+        <resource-file src="assets/medinav3-staff.db" target="assets/medinav3-staff.db" />
+        <resource-file src="assets/images.db" target="assets/images.db" />        
+        <resource-file src="assets/config.json" target="assets/config.json" />
+        <resource-file src="assets/ui-def-firebase.json" target="assets/ui-def-firebase.json" />
         <!-- END Assets -->
 
         <!-- Drawables -->
-        <resource-file src="src/android/assets/app_directory_top.png" target="res/drawable/app_directory_top.png" />
-        <resource-file src="src/android/assets/app_directory_top.png" target="res/drawable-port-hdpi/app_directory_top.png" />
+        <resource-file src="assets/app_directory_top.png" target="res/drawable/app_directory_top.png" />
+        <resource-file src="assets/app_directory_top.png" target="res/drawable-port-hdpi/app_directory_top.png" />
         <!-- END Drawables -->
 
         <!-- Gradle -->
@@ -179,4 +173,5 @@
 
         <dependency id="cordova-custom-config" version="^5.1.0" />
     </platform>
+    
 </plugin>
