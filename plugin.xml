@@ -80,7 +80,7 @@
         <!-- not using the <asset> tag as it places the file in the wrong directory-->
         <resource-file src="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.txt" />
         <resource-file src="assets/2938FCBC-163F-4BF0-8CB2-55BD7AD912D1.zip" /> 
-        <!--<resource-file src="assets/ConnexientVenueMapping.plist" /> -->
+        <resource-file src="assets/ConnexientVenueMapping.plist" />
         <!-- END Assets -->
 
     </platform>
