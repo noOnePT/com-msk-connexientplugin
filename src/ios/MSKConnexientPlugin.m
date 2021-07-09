@@ -57,12 +57,14 @@
             [CNXANAnalytics getStarted];
         } else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+            [pluginResult setKeepCallbackAsBool:true];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         }
     }];
     
     [[NSNotificationCenter defaultCenter] addObserverForName:kMapsReadyForUse object:nil queue:nil usingBlock:^(NSNotification *note) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        [pluginResult setKeepCallbackAsBool:true];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         NSLog(@"Maps ready for use!");
     }];
