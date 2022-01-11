@@ -4,6 +4,9 @@ android {
     targetCompatibility JavaVersion.VERSION_1_8 }
 }
 repositories {
+    google()
+    jcenter()
+    mavenCentral()
     flatDir {
     dirs '../app/src/main/libs' 
     }

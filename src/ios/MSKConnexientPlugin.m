@@ -54,7 +54,7 @@
     [[CNXCore sharedManager] setCompletitionBlock:^(NSError *error) {
         if(!error){
             [CNXMapManager prepareMapsForUse];
-            //[CNXANAnalytics getStarted];
+            [CNXANAnalytics getStarted];
         } else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
