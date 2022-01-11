@@ -137,6 +137,69 @@
                 tools:replace="android:value"
                 android:name="com.google.android.geo.API_KEY"
                 android:value="$GOOGLEMAPS_APIKEY" />
+
+                <service tools:node="merge" android:exported="false" android:name="com.connexient.sdk.sync.DownloadService" />
+                <service tools:node="merge" android:exported="false" android:name="com.connexient.sdk.location.manager.impl.NaoSdk4Service" />
+        
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.launch.StartPermissionsActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.launch.CampusSelectionActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.main.MainDrawerActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.profile.PlaceProfileActivity2"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.profile.StaffProfileActivity2"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.profile.MeetMeProfileActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.search.SearchActivity3"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.parking.ParkingPlannerActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.profile.ParkingPlaceProfileActivity2"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.parking.SaveMyCarActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.parking.SaveMyCarManualActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.settings.ReportIssueActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.ui.RouteDumpActivity" />
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.map.MultiMapRouteActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.map.MultiMapBrowseActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.map.EditRouteActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.meetme.MeetMeMainActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.meetme.MeetMeUsernameActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.favorites.SearchFavoritesActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.walkthrough.WalkthroughActivity" />
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.main.MainContainerActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.settings.LandmarkReportActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.utils.WebViewActivity"/>
+                <activity tools:node="merge" android:exported="false"
+                    android:name="com.connexient.medinav3.ui.pdf.PdfViewerActivity"/>
+                <receiver tools:node="merge" android:exported="false"
+                    android:name="com.polestar.models.RegisterBackgroundScanReceiver"/>
+                <receiver tools:node="merge" android:exported="false" android:name="com.polestar.models.BackgroundScanReceiver" />
+                <service tools:node="merge" android:exported="false"
+                    android:name="com.polestar.naosdk.controllers.AndroidGeofencingJobService" />
+                <service tools:node="merge" android:exported="false"
+                    android:name="com.polestar.naosdk.controllers.AndroidCoverageService" />
+                <service tools:node="merge" android:exported="false"
+                    android:name="com.polestar.naosdk.controllers.AndroidCoverageJobService" />
+        
+                <receiver tools:node="merge" android:exported="false" android:name="com.polestar.models.BeaconCheckLostAlarmReceiver" />
         </config-file>
         <!-- END AndroidManifiest.xml Meta data -->
 
