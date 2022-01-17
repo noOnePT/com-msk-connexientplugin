@@ -9,11 +9,12 @@ repositories {
     mavenCentral()
     flatDir {
     dirs '../app/src/main/libs' 
+    maven { url "https://dist.nao-cloud.com/android/maven/" }
     }
 }
 dependencies {
     implementation(name: 'libVisioMove', ext: 'aar') 
-    implementation 'eu.polestar:naosdk:4.8.0'
+    implementation 'eu.polestar:naosdk:4+'
     debugImplementation(name: 'cxt-sdk-debug', ext: 'aar') 
     debugImplementation(name: 'cxt-core-debug', ext: 'aar') 
     debugImplementation(name: 'cxt-data-debug', ext: 'aar') 
