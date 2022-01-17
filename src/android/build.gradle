@@ -13,7 +13,7 @@ repositories {
 }
 dependencies {
     implementation(name: 'libVisioMove', ext: 'aar') 
-    implementation 'eu.polestar:naosdk:4.7.3'
+    implementation 'eu.polestar:naosdk:4.8.0'
     debugImplementation(name: 'cxt-sdk-debug', ext: 'aar') 
     debugImplementation(name: 'cxt-core-debug', ext: 'aar') 
     debugImplementation(name: 'cxt-data-debug', ext: 'aar') 
