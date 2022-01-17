@@ -5,12 +5,11 @@ android {
 }
 repositories {
     google()
-    jcenter()
     mavenCentral()
     flatDir {
-    dirs '../app/src/main/libs' 
-    maven { url "https://dist.nao-cloud.com/android/maven/" }
+        dirs '../app/src/main/libs' 
     }
+    maven { url "https://dist.nao-cloud.com/android/maven/" }
 }
 dependencies {
     implementation(name: 'libVisioMove', ext: 'aar') 
